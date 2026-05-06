@@ -1029,6 +1029,23 @@
     /* ============================================================
        BACK TO TOP
     ============================================================ */
+    .demo-badge {
+      position: fixed;
+      right: -90px;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 900;
+      letter-spacing: 12px;
+      text-transform: uppercase;
+      color: rgba(212, 160, 23, 0.18);
+      pointer-events: none;
+      z-index: 998;
+      user-select: none;
+      white-space: nowrap;
+    }
+
     #back-to-top {
       position: fixed;
       bottom: 2rem;
@@ -1527,6 +1544,8 @@
   <!-- ============================================================
        BACK TO TOP BUTTON
   ============================================================ -->
+  <div class="demo-badge" aria-hidden="true">DEMO</div>
+
   <button id="back-to-top" aria-label="Back to top" title="Back to top">
     &#8679;
   </button>
